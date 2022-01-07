@@ -1,0 +1,192 @@
+/* PC low resolution */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+    .header__nav-bar--link {
+        padding: 0 20px;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    /* Define again */
+    .btn {
+        min-width: 135px;
+        height: 45px;
+    }
+
+    /* Wrapper */
+    #wrapper {
+        background-size: cover;
+    }
+    
+    .footer-info .flexible {
+        flex-direction: column;
+    }
+
+    .header__nav-bar {
+        flex-direction: column;
+        display: flex;
+        top: 0;
+        position: fixed;
+        left: 0;
+        background-color: #070640; 
+        min-height: 100vh;
+        z-index: 1;
+        padding-top: 30px;
+        transform: translateX(-100%);
+        transition: transform linear 0.25s;
+    }
+
+    .header__nav-bar--list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__nav-bar--link {
+        color: #fff;
+        line-height: 5.6rem;
+        padding: 0 30px;
+    }
+
+    .header__contact {
+        margin-left: auto;
+    }
+
+    .header__menu-icon {
+        display: block;
+    }
+
+    #header__nav-bar-mobile:checked ~ .header__overlay {
+        display: block;
+    }
+
+    #header__nav-bar-mobile:checked ~ .header__nav-bar {
+        transform: translateX(0);
+    }
+
+    .features-box__title {
+        margin-bottom: 15px;
+    }
+
+    .portfolio-item__img {
+        margin-bottom: 30px;
+    }
+
+    .portfolio-item__title {
+        font-size: 3rem;
+        line-height: initial;
+    }
+
+    .testimonial--scroll-btn {
+        display: none;
+    }
+
+    .card__modal {
+        margin-bottom: 60px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .intro__heading {
+        font-size: 4.6rem;
+        line-height: 6.8rem;
+        margin-bottom: 25px;
+    }
+    
+    .header__nav-bar {
+        min-width: 35vw;
+    }
+
+    .header__contact--link {
+        font-size: 1.8rem;
+    }
+
+    .features-box__title {
+        font-size: 5.5rem;
+        line-height: 8rem;
+    }
+
+    .services--title,
+    .portfolio--title,
+    .testimonial--title,
+    .letstalk--title {
+        font-size: 4.5rem;
+        margin-bottom: 70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .main-interface,
+    #container .grid.wide {
+        padding: 0 15px;
+    }
+
+    .header {
+        padding: 20px 15px;
+    }
+
+    .intro__heading {
+        font-size: 3rem;
+        -webkit-line-clamp: 2;
+        line-height: 4rem;
+    }
+
+    .header__nav-bar {
+        min-width: 55vw;
+    }
+
+    .header__contact--link {
+        display: none;
+    }
+
+    .features-box__title,
+    .services--title,
+    .portfolio--title,
+    .testimonial--title,
+    .letstalk--title {
+        font-size: 3rem;
+        line-height: 5rem;
+        margin-bottom: 40px;
+    }
+
+    .services-item {
+        flex-direction: column;
+    }
+
+    .testimonial-box {
+        padding: 30px 15px 60px;
+    }
+
+    .testimonial-box__text {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .modal--title,
+    .modal--title {
+        font-size: 2.4rem;
+    }
+    
+    .card--title {
+        font-size: 2rem;
+    }
+
+    .footer-info__nav-bar--link {
+        padding: 0 15px;
+    }
+
+    .social-list__item {
+        --diameter: 62px;
+        width: var(--diameter);
+        height: var(--diameter)
+    }
+
+    .social-list__item-link-icon {
+        font-size: 3rem;
+    }
+
+    .scroll-to-top {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follio</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <!--[if IE]>
+    This browser is internet explorer (any version)
+    <![endif]-->
+
+    <!-- Icon linkage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font linkage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- My grid Library -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+
+    <!-- File CSS linkage -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/show-hide-btn.css">
+</head>
+<body>
+    <div id="main">
+        <header id="wrapper" style="background: url(./img/wrapper/wrapper-bg.jpg) no-repeat right" >
+            <div class="header">
+                <div class="grid wide flexible">
+                    <a href="#" class="">
+                        <img class="header__logo" src="./img/wrapper/header/follio-logo.png" alt="Follio Logo">
+                    </a>
+                    <input type="checkbox" hidden name="" id="header__nav-bar-mobile">
+
+                    <div class="header__nav-bar">
+                        <ul class="header__nav-bar--list">
+                            <li class="header__nav-bar--item">
+                                <a class="header__nav-bar--link" href="#">Home</a>
+                                <ul class="header__nav-bar--subnav">
+                                    <li class="header__subnav--item">
+                                        <a href="#" style="color: var(--primary-color); " class="header__subnav--item-link">Home</a> 
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-2</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-3</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-4</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-5</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-6</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-7</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-8</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-9</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Home-style-10</a> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-bar--item">
+                                <a class="header__nav-bar--link" href="#">About</a>
+                            </li>
+                            <li class="header__nav-bar--item nav-bar--portfolio">
+                                <a class="header__nav-bar--link" href="#">Portfolio</a>
+                                <ul class="header__nav-bar--subnav">
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Portfolio Grid</a> 
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Portfolio Grid-2</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Portfolio Mashonary</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Portfolio List</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Portfolio Cro</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-bar--item nav-bar--pages">
+                                <a class="header__nav-bar--link" href="#">Pages</a>
+                                <ul class="header__nav-bar--subnav">
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">About</a> 
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Service Details</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Project Details</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">404 Page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-bar--item nav-bar--blog">
+                                <a class="header__nav-bar--link" href="#">Blog</a>
+                                <ul class="header__nav-bar--subnav">
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Blog</a> 
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Blog Fullwidth</a>
+                                    </li>
+                                    <li class="header__subnav--item">
+                                        <a href="#" class="header__subnav--item-link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-bar--item">
+                                <a class="header__nav-bar--link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="header__letstalk btn">
+                        <a class="header__letstalk--link" href="">Let's Talk</a>
+                    </button>
+
+                    <label for="header__nav-bar-mobile" class="header__overlay"></label>
+                    <label for="header__nav-bar-mobile" class="header__menu-icon fas fa-bars"></label>
+                </div>
+            </div>
+
+                <div class="main-interface">
+                    <div class="grid wide">
+                        <div class="introduction">
+                            <h1 class="intro__heading">
+                                I’m 
+                                <span style="color: var(--primary-color);">John</span>
+                                Smith
+                            </h1>
+
+                            <p class="intro__text">Freelance UI/UX designer</p>
+
+                            <div class="intro__social">
+                                <button style="border-color: #ea4c89;" class="btn-s social--fb">
+                                    <a style="color: #ea4c89;" class="social--fb-link" href="#">
+                                        <i class="social--fb-link-icon fab fa-facebook-f"></i>
+                                    </a>
+                                </button>
+
+                                <button style="border-color: #4176fa;" class="btn-s social--li">
+                                    <a style="color: #4176fa;" class="social--li-link" href="#">
+                                        <i class="social--li-link-icon fab fa-linkedin-in"></i>
+                                    </a>
+                                </button>
+
+                                <button style="border-color: #A329A6;" class="btn-s social--ins">
+                                    <a class="social--ins-link" href="#">
+                                        <i class="social--ins-link-icon fab fa-instagram"></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="human" src="./img/wrapper/wrapper-human.png" alt="">
+                    <div class="human-exp">
+                        <span class="human-exp__num">7</span>
+                        <span class="human-exp__info">Years Experience</span>
+                    </div>
+                </div>
+        </header>
+    
+        <div id="container">
+            <div class="container__aboutme">
+                <div class="grid wide">
+                    <h1 class="aboutme--title">About Me</h1>
+
+                    <button class="aboutme--btn btn-1">
+                        About
+                    </button>
+
+                    <button class="aboutme--btn btn-2">
+                        Skill
+                    </button>
+
+                    <button class="aboutme--btn btn-3">
+                        Services
+                    </button>
+
+                    <button class="aboutme--btn btn-4">
+                        Social Media
+                    </button>
+
+                    <button class="aboutme--btn btn-5">
+                        Award
+                    </button>
+
+                    <div class="grid section-1">
+                        <div class="row">
+                            <div class="col l-6">
+                                <img src="./img/container/about/about-img.png" alt="" class="section-img">
+                            </div>
+
+                            <div class="col l-6">
+                                <h1 class="section-1__heading">I create products not just art</h1>
+                                <p class="section-1__desc">My name is John Smith. I am a web designer and developer.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                <button class="section-1__btn btn">Let's Talk</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="grid section-2">
+                        <div class="row">
+                            <div class="col l-4">
+                                <h1 style="color: #fe3e57;" class="section-2__heading">75%</h1>
+                                <div style="background-color: #fe3e57; width: 75%;" class="section-2__status"></div>
+                                <p class="section-2__desc">Communication Skills</p>
+                            </div>
+
+                            <div class="col l-4">
+                                <h1 style="color: #54FAAE;" class="section-2__heading">90%</h1>
+                                <div style="background-color: #54FAAE; width: 90%;" class="section-2__status"></div>
+                                <p class="section-2__desc">Project Management</p>
+                            </div>
+
+                            <div class="col l-4">
+                                <h1 style="color: #ff8c2f;" class="section-2__heading">65%</h1>
+                                <div style="background-color: #ff8c2f; width: 65%;" class="section-2__status"></div>
+                                <p class="section-2__desc">Problem Solving</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col l-4">
+                                <h1 style="color: #f1f965;" class="section-2__heading">55%</h1>
+                                <div style="background-color: #f1f965; width: 55%;" class="section-2__status"></div>
+                                <p class="section-2__desc">Analitical Abilities</p>
+                            </div>
+
+                            <div class="col l-4">
+                                <h1 style="color: #ff0173;" class="section-2__heading">43%</h1>
+                                <div style="background-color: #ff0173; width: 43%;" class="section-2__status"></div>
+                                <p class="section-2__desc">Organization</p>
+                            </div>
+                            
+                            <div class="col l-4">
+                                <h1 style="color: #39c4ff;" class="section-2__heading">82%</h1>
+                                <div style="background-color: #39c4ff; width: 82%;" class="section-2__status"></div>
+                                <p class="section-2__desc">Creativity</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="grid section-3">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12 services-item">
+                                <div style="background: url(./img/container/services/items/item-1.png) no-repeat center / contain;" class="services-item__img-bg">
+                                    <div style="background: url(./img/container/services/icons/001-lightbulb.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                                </div>
+                                <div class="services-item__body">
+                                    <h1 class="services-item__body-title">Product Design</h1>
+                                    <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 c-12 services-item">
+                                <div style="background: url(./img/container/services/items/item-2.png) no-repeat center / contain;" class="services-item__img-bg">
+                                    <div style="background: url(./img/container/services/icons/002-edit-file.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                                </div>
+                                <div class="services-item__body">
+                                    <h1 class="services-item__body-title">Web Design</h1>
+                                    <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12 services-item">
+                                <div style="background: url(./img/container/services/items/item-3.png) no-repeat center / contain;" class="services-item__img-bg">
+                                    <div style="background: url(./img/container/services/icons/003-visualization.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                                </div>
+                                <div class="services-item__body">
+                                    <h1 class="services-item__body-title">Visual Design</h1>
+                                    <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 c-12 services-item">
+                                <div style="background: url(./img/container/services/items/item-4.png) no-repeat center / contain;" class="services-item__img-bg">
+                                    <div style="background: url(./img/container/services/icons/004-employee.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                                </div>
+                                <div class="services-item__body">
+                                    <h1 class="services-item__body-title">Business Strategy</h1>
+                                    <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid section-4">
+                        <div class="row">
+                            <div class="col l-4 flexible">
+                                <button style="border-color: #3b5998;" class="btn-l social--fb">
+                                    <a style="color: #3b5998;" class="social--fb-link" href="#">
+                                        <i class="social--fb-link-icon fab fa-facebook-f"></i>
+                                    </a>
+                                </button>
+                                <span class="section-4__title">Facebook</span>
+                            </div>
+
+                            <div class="col l-4 flexible">
+                                <button style="border-color: #ff8e40;" class="btn-l social--ins">
+                                    <a class="social--ins-link" href="#">
+                                        <i class="social--ins-link-icon fab fa-instagram"></i>
+                                    </a>
+                                </button>
+                                <span class="section-4__title">Instagram</span>
+                            </div>
+
+                            <div class="col l-4 flexible">
+                                <button style="border-color: #03a9f4;" class="btn-l social--twitter">
+                                    <a style="color: #03a9f4;" class="social--twitter-link" href="#">
+                                        <i class="social--twitter-link-icon fab fa-twitter"></i>
+                                    </a>
+                                </button>
+                                <span class="section-4__title">Twitter</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col l-4 flexible">
+                                <button style="border-color: #ea4c89;" class="btn-l social--dribble">
+                                    <a style="color: #ea4c89;" class="social--dribble-link" href="#">
+                                        <i class="social--dribble-link-icon fas fa-basketball-ball"></i>
+                                    </a>
+                                </button>
+                                <span class="section-4__title">Dribble</span>
+                            </div>
+
+                            <div class="col l-4 flexible">
+                                <button style="border-color: #007aaa;" class="btn-l social--li">
+                                    <a style="color: #007aaa;" class="social--li-link" href="#">
+                                        <i class="social--li-link-icon fab fa-linkedin-in"></i>
+                                    </a>
+                                </button>
+                                <span class="section-4__title">Linkedin</span>
+                            </div>
+
+                            <div class="col l-4 flexible">
+                                <button style="border-color: #4176fa;" class="btn-l social--behance">
+                                    <a  style="color: #4176fa;" class="social--behance-link" href="#">
+                                        <i class="social--behance-link-icon fab fa-behance"></i>
+                                    </a>
+                                </button>
+                                <span class="section-4__title">Behance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid section-5">
+                        <div class="row">
+                            <div class="col l-6">
+                                <img src="./img/container/award/certificate-1.jpg" alt="" class="section-img">
+                            </div>
+
+                            <div class="col l-6">
+                                <img src="./img/container/award/certificate-2.jpg" alt="" class="section-img">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col l-6">
+                                <img src="./img/container/award/certificate-3.jpg" alt="" class="section-img">
+                            </div>
+                            <div class="col l-6">
+                                <img src="./img/container/award/certificate-4.jpg" alt="" class="section-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    
+            <div class="container__portfolio">
+                <div class="grid wide">
+                    <h1 class="portfolio--title">Portfolio</h1>
+                    <div class="row">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="portfolio-item">
+                                <img src="./img/container/portfolio/minimalism.jpg" alt="" class="portfolio-item__img">
+                                <div class="portfolio-item__info">
+                                    <h1 class="portfolio-item__title">Minimalism</h1>
+                                    <p class="portfolio-item__text">Illustration . Art Direction</p>
+                                    <button class="portfolio-item__view-btn">View Work</button>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="./img/container/portfolio/3d-project.jpg" alt="" class="portfolio-item__img">
+                                <div class="portfolio-item__info">
+                                    <h1 class="portfolio-item__title">Minimalism</h1>
+                                    <p class="portfolio-item__text">Illustration . Art Direction</p>
+                                    <button class="portfolio-item__view-btn">View Work</button>
+
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col l-6 m-6 c-12">
+                            <div class="portfolio-item">
+                                <img src="./img/container/portfolio/abstract-art.jpg" alt="" class="portfolio-item__img">
+                                <div class="portfolio-item__info">
+                                    <h1 class="portfolio-item__title">Minimalism</h1>
+                                    <p class="portfolio-item__text">Illustration . Art Direction</p>
+                                    <button class="portfolio-item__view-btn">View Work</button>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="./img/container/portfolio/modern-bg.jpg" alt="" class="portfolio-item__img">
+                                <div class="portfolio-item__info">
+                                    <h1 class="portfolio-item__title">Minimalism</h1>
+                                    <p class="portfolio-item__text">Illustration . Art Direction</p>
+                                    <button class="portfolio-item__view-btn">View Work</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div style="background: url(./img/container/testimonial/testimonial-bg.jpg) " class="container__testimonial">
+                <div class="grid wide">
+                    <h1 style="text-align: left;" class="testimonial--title">Testimonial</h1>
+                </div>
+                <div class="grid wide">
+                    <div class="testimonial-box">
+                        <p class="testimonial-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ipsa consectetur! Eligendi soluta dicta, cum ipsum iste quibusdam voluptate aperiam libero accusamus maxime modi?</p>
+                        <div class="flexible">
+                            <img src="./img/container/testimonial/avt.jfif" alt="Avatar" class="testimonial-box__avt">
+                            <div>
+                                <p class="testimonial-box__name">John Harry</p>
+                                <p class="testimonial-box__desc">CEO of Moderntern</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial--scroll-btn">
+                        <button class="scroll-btn">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </button>
+                        <button class="scroll-btn">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </button>
+                    </div>
+                </div>
+    
+    
+                
+            </div>
+    
+            <div class="containter__letstalk">
+                <div class="grid wide">
+                    <h1 style="text-align: center;" class="letstalk--title">Let's Talk</h1>
+                    <div class="row">
+                        <div class="col l-o-1 l-6 m-12 c-12">
+                            <div class="card__modal">
+                                <h2 class="modal--title">Get In Touch</h2>
+                                <div class="row">
+                                    <div class="col l-6 m-12 c-12">
+                                        <input type="text" class="card--input" placeholder="Name">
+                                    </div>
+                                    <div class="col l-6 m-12 c-12">
+                                        <input type="text" class="card--input" placeholder="Lastname">
+                                    </div>
+                                </div>
+                                <input type="email" class="card--input" placeholder="Email">
+                                <input type="text" class="card--input" placeholder="Subject">
+                                <input type="text" class="card--input" placeholder="Message">
+                                <button style="border-radius: 40px;" class="btn modal--send-btn"><a href="">Send Message</a></button>
+                            </div>
+                            
+                            
+                        </div>  
+    
+                        <div class="col l-5 m-12 c-12">
+                            <div class="card__item">
+                                <h2 class="card--title">25 North Street, Dubai</h2>
+                                <div class="card--info">
+                                    <div class="card--img">
+                                        <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                    </div>
+                                    <span class="card--text">Office Address</span>
+                                </div>
+                            </div>
+                            
+                            <div class="card__item">
+                                <h2 class="card--title">info@edefytheme.com</h2>
+                                <div class="card--info">
+                                    <div class="card--img">
+                                        <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                    </div>
+                                    <span class="card--text">Official Mail</span>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <h2 class="card--title">+91 256-987-239</h2>
+                                <div class="card--info">
+                                    <div class="card--img">
+                                        <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                    </div>
+                                    <span class="card--text">Official Phone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <footer id="footer">
+            <div class="footer-info">
+                <div class="grid wide flexible">
+                    <img class="footer-info__logo" src="./img/wrapper/header/follio-logo.png" alt="Follio Logo">
+                    <div class="footer-info__nav-bar">
+                        <ul class="footer-info__nav-bar--list">
+                            <li class="footer-info__nav-bar--item">
+                                <a class="footer-info__nav-bar--link" href="#">About</a>
+                            </li>
+                            <li class="footer-info__nav-bar--item">
+                                <a class="footer-info__nav-bar--link" href="#">Portfolio</a>
+                            </li>
+                            <li class="footer-info__nav-bar--item">
+                                <a class="footer-info__nav-bar--link" href="#">Blog</a>
+                            </li>
+                            <li class="footer-info__nav-bar--item">
+                                <a class="footer-info__nav-bar--link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-info__social">
+                        <ul class="footer-info__social-list">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__item-link">
+                                    <i class="social-list__item-link-icon fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="" class="social-list__item-link">
+                                    <i class="social-list__item-link-icon fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="" class="social-list__item-link">
+                                    <i class="social-list__item-link-icon fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-copyright__text">© 2020 Follio. All rights reserved</p>
+            </div>
+        </footer>
+
+        <buuton class="scroll-to-top fas fa-arrow-circle-up"></buuton>
+    </div>
+</body>
+</html>
+
+<!-- http://follio-react.wpocean.com/home -->
