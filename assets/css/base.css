@@ -3,6 +3,9 @@
     --text-color: #fff !important;
     --heading-black-color: #121127 !important;
     --heading-blue-color: #131058 !important;
+
+    /* Set height */
+    --header-height: 85px;
 }
 
 * {

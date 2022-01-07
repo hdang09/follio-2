@@ -63,8 +63,8 @@
         transform: translateX(0);
     }
 
-    .features-box__title {
-        margin-bottom: 15px;
+    .section-1__heading {
+        font-size: 3.2rem;
     }
 
     .portfolio-item__img {
@@ -101,15 +101,12 @@
         font-size: 1.8rem;
     }
 
-    .features-box__title {
-        font-size: 5.5rem;
-        line-height: 8rem;
+    .human-exp {
+        right: 50%;
+        transform: translateX(50%);
     }
 
-    .services--title,
-    .portfolio--title,
-    .testimonial--title,
-    .letstalk--title {
+    .title-of-container {
         font-size: 4.5rem;
         margin-bottom: 70px;
     }
@@ -120,6 +117,10 @@
     .main-interface,
     #container .grid.wide {
         padding: 0 15px;
+    }
+
+    .main-interface {
+        margin-top: var(--header-height);
     }
 
     .header {
@@ -136,18 +137,30 @@
         min-width: 55vw;
     }
 
-    .header__contact--link {
+    .header__letstalk {
         display: none;
     }
 
-    .features-box__title,
-    .services--title,
-    .portfolio--title,
-    .testimonial--title,
-    .letstalk--title {
+    .title-of-container {
         font-size: 3rem;
         line-height: 5rem;
         margin-bottom: 40px;
+    }
+
+    .human {
+        display: none;
+    }
+
+    .human-exp {
+        /* bottom: 0; */
+    }
+
+    .aboutme--btn {
+        width: 100%;
+    }
+
+    .section-1__btn {
+        width: 100%;
     }
 
     .services-item {

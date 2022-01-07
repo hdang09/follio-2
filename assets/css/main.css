@@ -3,7 +3,7 @@
     height: 900px;
     background-size: cover;
     position: relative;
-
+    background: url("../../img/wrapper/wrapper-bg.jpg") no-repeat right
 }
 
 /* Background color */
@@ -15,16 +15,14 @@
     background-color: #070640;
 }
 
-.container__portfolio {
+.container__portfolio,
+.container__news {
     padding: 100px 0;
     background-color: #0C0B48;
 }
 
 /* Title color */
-.aboutme--title,
-.portfolio--title,
-.testimonial--title,
-.letstalk--title {
+.title-of-container {
     --text-size: 7rem;
     font-family: 'Now-Bold';
     font-size: var(--text-size);
@@ -37,11 +35,13 @@
 
 /* Header */
 .header {
-    width: 100%;
     /* width: 1200px; */
-    height: 85px;
+    height: var(--header-height);
     position: fixed;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     background-color: #090726;
     box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
     display: flex;
@@ -137,7 +137,6 @@
 .header__menu-icon {
     font-size: 2.6rem;
     margin-left: 10px;
-    color: #000;
     cursor: pointer;
     display: none;
 }
@@ -147,6 +146,10 @@
     display: flex;
     align-items: center;
     height: 900px;
+}
+
+.main-interface .grid.wide {
+    z-index: 1;
 }
 
 .introduction {
@@ -175,36 +178,51 @@
 }
 
 .social--ins-link-icon {
-background: -webkit-linear-gradient(orange, yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(orange, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .human {
     position: absolute;
-    right: 65px;
+    right: 5%;
     bottom: 0;
 }
 
 .human-exp {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -12%;
+    right: 20%;
     width: 275px;
     height: 230px;
     background: linear-gradient(90deg, red, orange);
     opacity: 0.85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.human-exp::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    top: 20px;
+    border: 1px dashed #fff;
 }
 
 .human-exp__num {
-    font-size: 10rem;
+    font-size: 15rem;
     font-weight: 1000;
 }
 
 .human-exp__info {
-    font-size: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
 }
-
 
 /* Container */
 #container {
@@ -258,7 +276,7 @@ background: -webkit-linear-gradient(orange, yellow);
 }
 
 .section-img {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 24px;
 }
 
@@ -416,6 +434,7 @@ background: -webkit-linear-gradient(orange, yellow);
 
 /* Testimonial */
 .container__testimonial {
+    background: url("../../img/container/testimonial/testimonial-bg.jpg");
 }
 
 .testimonial {
@@ -503,7 +522,7 @@ background: -webkit-linear-gradient(orange, yellow);
     height: 675px;
     padding: 30px;
     box-shadow: 0 5px 15px 0 rgb(68 68 68 / 10%);
-    border: 1px solid #fff;
+    border: 1px solid #fafafa;
 }
 
 .modal--title {
@@ -523,7 +542,7 @@ background: -webkit-linear-gradient(orange, yellow);
     border-radius: 5px;
     box-shadow: 0 10px 40px 0 rgb(50 50 50 / 10%);
     margin-bottom: 30px;
-    border: 1px solid #fff;
+    border: 1px solid #fafafa;
 }
 .modal--title,
 .card--title {
@@ -604,6 +623,40 @@ input[placeholder="Message"] {
     color: var(--text-color);
 }
 
+/* Latest News */
+.news__img {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: block;
+}
+
+.news__author {
+    font-size: 1.6rem;
+    padding-right: 5px;
+    color: #3c7dd9;
+    font-weight: 600;
+}
+
+.news__date {
+    font-size: 1.6rem;
+    color: #c7c6c6;
+    font-weight: 600;
+}
+
+.news__label {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 900;
+}
+
+.news__more {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
 
 
 /* Footer */
@@ -648,6 +701,10 @@ input[placeholder="Message"] {
     border-radius: 50%;
     margin-right: 20px;
     border: 1px solid #3840a9;
+}
+
+.social-list__item:last-child {
+    margin-right: 0;
 }
 
 .social-list__item-link {

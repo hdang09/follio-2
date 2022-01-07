@@ -29,7 +29,7 @@
 </head>
 <body>
     <div id="main">
-        <header id="wrapper" style="background: url(./img/wrapper/wrapper-bg.jpg) no-repeat right" >
+        <header id="wrapper">
             <div class="header">
                 <div class="grid wide flexible">
                     <a href="#" class="">
@@ -134,12 +134,14 @@
                         </ul>
                     </div>
 
-                    <button class="header__letstalk btn">
-                        <a class="header__letstalk--link" href="">Let's Talk</a>
-                    </button>
-
-                    <label for="header__nav-bar-mobile" class="header__overlay"></label>
-                    <label for="header__nav-bar-mobile" class="header__menu-icon fas fa-bars"></label>
+                    <div class="flexible">
+                        <button class="header__letstalk btn">
+                            <a class="header__letstalk--link" href="">Let's Talk</a>
+                        </button>
+    
+                        <label for="header__nav-bar-mobile" class="header__overlay"></label>
+                        <label for="header__nav-bar-mobile" class="header__menu-icon fas fa-bars"></label>
+                    </div>
                 </div>
             </div>
 
@@ -178,7 +180,7 @@
                     <img class="human" src="./img/wrapper/wrapper-human.png" alt="">
                     <div class="human-exp">
                         <span class="human-exp__num">7</span>
-                        <span class="human-exp__info">Years Experience</span>
+                        <span class="human-exp__info">Years <br> Experience</span>
                     </div>
                 </div>
         </header>
@@ -186,7 +188,7 @@
         <div id="container">
             <div class="container__aboutme">
                 <div class="grid wide">
-                    <h1 class="aboutme--title">About Me</h1>
+                    <h1 class="title-of-container">About Me</h1>
 
                     <button class="aboutme--btn btn-1">
                         About
@@ -225,39 +227,37 @@
 
                     <div class="grid section-2">
                         <div class="row">
-                            <div class="col l-4">
+                            <div class="col l-4 m-6 c-12">
                                 <h1 style="color: #fe3e57;" class="section-2__heading">75%</h1>
                                 <div style="background-color: #fe3e57; width: 75%;" class="section-2__status"></div>
                                 <p class="section-2__desc">Communication Skills</p>
                             </div>
 
-                            <div class="col l-4">
+                            <div class="col l-4 m-6 c-12">
                                 <h1 style="color: #54FAAE;" class="section-2__heading">90%</h1>
                                 <div style="background-color: #54FAAE; width: 90%;" class="section-2__status"></div>
                                 <p class="section-2__desc">Project Management</p>
                             </div>
 
-                            <div class="col l-4">
+                            <div class="col l-4 m-6 c-12">
                                 <h1 style="color: #ff8c2f;" class="section-2__heading">65%</h1>
                                 <div style="background-color: #ff8c2f; width: 65%;" class="section-2__status"></div>
                                 <p class="section-2__desc">Problem Solving</p>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col l-4">
+                            <div class="col l-4 m-6 c-12">
                                 <h1 style="color: #f1f965;" class="section-2__heading">55%</h1>
                                 <div style="background-color: #f1f965; width: 55%;" class="section-2__status"></div>
                                 <p class="section-2__desc">Analitical Abilities</p>
                             </div>
 
-                            <div class="col l-4">
+                            <div class="col l-4 m-6 c-12">
                                 <h1 style="color: #ff0173;" class="section-2__heading">43%</h1>
                                 <div style="background-color: #ff0173; width: 43%;" class="section-2__status"></div>
                                 <p class="section-2__desc">Organization</p>
                             </div>
                             
-                            <div class="col l-4">
+                            <div class="col l-4 m-6 c-12">
                                 <h1 style="color: #39c4ff;" class="section-2__heading">82%</h1>
                                 <div style="background-color: #39c4ff; width: 82%;" class="section-2__status"></div>
                                 <p class="section-2__desc">Creativity</p>
@@ -310,7 +310,7 @@
 
                     <div class="grid section-4">
                         <div class="row">
-                            <div class="col l-4 flexible">
+                            <div class="col l-4 m-6 c-12 flexible">
                                 <button style="border-color: #3b5998;" class="btn-l social--fb">
                                     <a style="color: #3b5998;" class="social--fb-link" href="#">
                                         <i class="social--fb-link-icon fab fa-facebook-f"></i>
@@ -319,7 +319,7 @@
                                 <span class="section-4__title">Facebook</span>
                             </div>
 
-                            <div class="col l-4 flexible">
+                            <div class="col l-4 m-6 c-12 flexible">
                                 <button style="border-color: #ff8e40;" class="btn-l social--ins">
                                     <a class="social--ins-link" href="#">
                                         <i class="social--ins-link-icon fab fa-instagram"></i>
@@ -328,7 +328,7 @@
                                 <span class="section-4__title">Instagram</span>
                             </div>
 
-                            <div class="col l-4 flexible">
+                            <div class="col l-4 m-6 c-12 flexible">
                                 <button style="border-color: #03a9f4;" class="btn-l social--twitter">
                                     <a style="color: #03a9f4;" class="social--twitter-link" href="#">
                                         <i class="social--twitter-link-icon fab fa-twitter"></i>
@@ -336,10 +336,8 @@
                                 </button>
                                 <span class="section-4__title">Twitter</span>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col l-4 flexible">
+                            <div class="col l-4 m-6 c-12 flexible">
                                 <button style="border-color: #ea4c89;" class="btn-l social--dribble">
                                     <a style="color: #ea4c89;" class="social--dribble-link" href="#">
                                         <i class="social--dribble-link-icon fas fa-basketball-ball"></i>
@@ -348,7 +346,7 @@
                                 <span class="section-4__title">Dribble</span>
                             </div>
 
-                            <div class="col l-4 flexible">
+                            <div class="col l-4 m-6 c-12 flexible">
                                 <button style="border-color: #007aaa;" class="btn-l social--li">
                                     <a style="color: #007aaa;" class="social--li-link" href="#">
                                         <i class="social--li-link-icon fab fa-linkedin-in"></i>
@@ -357,7 +355,7 @@
                                 <span class="section-4__title">Linkedin</span>
                             </div>
 
-                            <div class="col l-4 flexible">
+                            <div class="col l-4 m-6 c-12 flexible">
                                 <button style="border-color: #4176fa;" class="btn-l social--behance">
                                     <a  style="color: #4176fa;" class="social--behance-link" href="#">
                                         <i class="social--behance-link-icon fab fa-behance"></i>
@@ -370,20 +368,20 @@
 
                     <div class="grid section-5">
                         <div class="row">
-                            <div class="col l-6">
+                            <div class="col l-6 m-6 c-12">
                                 <img src="./img/container/award/certificate-1.jpg" alt="" class="section-img">
                             </div>
 
-                            <div class="col l-6">
+                            <div class="col l-6 m-6 c-12">
                                 <img src="./img/container/award/certificate-2.jpg" alt="" class="section-img">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col l-6">
+                            <div class="col l-6 m-6 c-12">
                                 <img src="./img/container/award/certificate-3.jpg" alt="" class="section-img">
                             </div>
-                            <div class="col l-6">
+                            <div class="col l-6 m-6 c-12">
                                 <img src="./img/container/award/certificate-4.jpg" alt="" class="section-img">
                             </div>
                         </div>
@@ -394,7 +392,7 @@
     
             <div class="container__portfolio">
                 <div class="grid wide">
-                    <h1 class="portfolio--title">Portfolio</h1>
+                    <h1 class="title-of-container">Portfolio</h1>
                     <div class="row">
                         <div class="col l-6 m-6 c-12">
                             <div class="portfolio-item">
@@ -439,9 +437,9 @@
                 </div>
             </div>
     
-            <div style="background: url(./img/container/testimonial/testimonial-bg.jpg) " class="container__testimonial">
+            <div class="container__testimonial">
                 <div class="grid wide">
-                    <h1 style="text-align: left;" class="testimonial--title">Testimonial</h1>
+                    <h1 style="text-align: left;" class="title-of-container">Testimonial</h1>
                 </div>
                 <div class="grid wide">
                     <div class="testimonial-box">
@@ -471,7 +469,7 @@
     
             <div class="containter__letstalk">
                 <div class="grid wide">
-                    <h1 style="text-align: center;" class="letstalk--title">Let's Talk</h1>
+                    <h1 style="text-align: center;" class="title-of-container">Let's Talk</h1>
                     <div class="row">
                         <div class="col l-o-1 l-6 m-12 c-12">
                             <div class="card__modal">
@@ -508,7 +506,7 @@
                                 <h2 class="card--title">info@edefytheme.com</h2>
                                 <div class="card--info">
                                     <div class="card--img">
-                                        <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                        <img src="./img/container/letstalk/mail.png" alt="" class="card--img-icon">
                                     </div>
                                     <span class="card--text">Official Mail</span>
                                 </div>
@@ -518,7 +516,7 @@
                                 <h2 class="card--title">+91 256-987-239</h2>
                                 <div class="card--info">
                                     <div class="card--img">
-                                        <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                        <img src="./img/container/letstalk/contact.png" alt="" class="card--img-icon">
                                     </div>
                                     <span class="card--text">Official Phone</span>
                                 </div>
@@ -527,6 +525,38 @@
                     </div>
                 </div>
                 
+            </div>
+
+            <div class="container__news">
+                <div class="title-of-container" style="text-align: center;">Latest News</div>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <img src="./img/container/news/img-1.jpg" alt="" class="news__img">
+                            <span class="news__author">By Admin</span>
+                            <span class="news__date">. Nov 24, 2020</span>
+                            <p class="news__label">Helpful tips for become a successful designer</p>
+                            <p class="news__more">Read More...</p>
+                        </div>
+    
+                        <div class="col l-4 m-12 c-12">
+                            <img src="./img/container/news/img-2.jpg" alt="" class="news__img">
+                            <span class="news__author">By Admin</span>
+                            <span class="news__date">. Nov 24, 2020</span>
+                            <p class="news__label">Helpful tips for become a successful designer</p>
+                            <p class="news__more">Read More...</p>
+                        </div>
+    
+                        <div class="col l-4 m-12 c-12">
+                            <img src="./img/container/news/img-3.jpg" alt="" class="news__img">
+                            <span class="news__author">By Admin</span>
+                            <span class="news__date">. Nov 24, 2020</span>
+                            <p class="news__label">Helpful tips for become a successful designer</p>
+                            <p class="news__more">Read More...</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     
