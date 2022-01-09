@@ -99,7 +99,7 @@
     font-weight: 600;
     display: block;
     text-decoration: none;
-    color: var(--text-color);
+    color: #000;
     background-color: #fff;
     /* opacity: 0; */
     -webkit-transition: all .4s ease-in-out;
@@ -244,6 +244,8 @@
     font-weight: 600;
     font-size: 1.6rem;
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
 }
 
 .about-btn {
@@ -274,6 +276,28 @@
     display: none;
     padding: 60px 0;
 }
+
+#btn-1:checked ~ .section-1 {
+    display: block;
+}
+
+#btn-2:checked ~ .section-2 {
+    display: block;
+}
+
+#btn-3:checked ~ .section-3 {
+    display: block;
+}
+
+#btn-4:checked ~ .section-4 {
+    display: block;
+}
+
+#btn-5:checked ~ .section-5 {
+    display: block;
+}
+
+
 
 .section-img {
     max-width: 100%;
@@ -388,6 +412,28 @@
     margin-left: 30px;
     font-weight: 1000;
 }
+
+/*  */
+
+/* #btn-1:checked ~ .section-1 {
+    display: block;
+}
+
+#btn-2:checked ~ .section-2 {
+    display: block;
+}
+
+#btn-3:checked ~ .section-3 {
+    display: block;
+}
+
+#btn-4:checked ~ .section-4 {
+    display: block;
+}
+
+#btn-5:checked ~ .section-5 {
+    display: block;
+} */
 
 /* Portfolio */
 .portfolio-item {
