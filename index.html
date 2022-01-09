@@ -39,7 +39,7 @@
                     <div class="header__nav-bar">
                         <ul class="header__nav-bar--list">
                             <li class="header__nav-bar--item">
-                                <a class="header__nav-bar--link" href="#">Home</a>
+                                <a class="header__nav-bar--link" href="">Home</a>
                                 <ul class="header__nav-bar--subnav">
                                     <li class="header__subnav--item">
                                         <a href="#" style="color: var(--primary-color); " class="header__subnav--item-link">Home</a> 
@@ -48,7 +48,7 @@
                                         <a href="#" class="header__subnav--item-link">Home-style-2</a>
                                     </li>
                                     <li class="header__subnav--item">
-                                        <a href="#" class="header__subnav--item-link">Home-style-3</a>
+                                        <a href="https://hdang09.github.io/follio/" class="header__subnav--item-link">Home-style-3</a>
                                     </li>
                                     <li class="header__subnav--item">
                                         <a href="#" class="header__subnav--item-link">Home-style-4</a>
@@ -393,9 +393,9 @@
     
             <div class="container__portfolio">
                 <div class="grid wide">
-                    <h1 class="title-of-container">Portfolio</h1>
                     <div class="row">
                         <div class="col l-6 m-6 c-12">
+                            <h1 class="title-of-container">Portfolio</h1>
                             <div class="portfolio-item">
                                 <img src="./img/container/portfolio/minimalism.jpg" alt="" class="portfolio-item__img">
                                 <div class="portfolio-item__info">
@@ -430,11 +430,11 @@
                                     <h1 class="portfolio-item__title">Minimalism</h1>
                                     <p class="portfolio-item__text">Illustration . Art Direction</p>
                                     <button class="portfolio-item__view-btn">View Work</button>
-
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                     </div>
+                    <a class="see-more">See More Work...</a>
                 </div>
             </div>
     
@@ -477,16 +477,17 @@
                                 <h2 class="modal--title">Get In Touch</h2>
                                 <div class="row">
                                     <div class="col l-6 m-12 c-12">
-                                        <input type="text" class="card--input" placeholder="Name">
+                                        <input type="text" name="text" class="card--input" placeholder="Name">
                                     </div>
                                     <div class="col l-6 m-12 c-12">
-                                        <input type="text" class="card--input" placeholder="Lastname">
+                                        <input type="text" name="text" class="card--input" placeholder="Lastname">
                                     </div>
                                 </div>
-                                <input type="email" class="card--input" placeholder="Email">
-                                <input type="text" class="card--input" placeholder="Subject">
-                                <input type="text" class="card--input" placeholder="Message">
-                                <button style="border-radius: 40px;" class="btn modal--send-btn"><a href="">Send Message</a></button>
+                                <input type="email" name="email" class="card--input" placeholder="Email">
+                                <input type="text" name="text" class="card--input" placeholder="Subject">
+                                <textarea name="message" class="card--input" placeholder="Message"></textarea>
+
+                                <button type="submit" style="border-radius: 40px;" class="btn modal--send-btn"><a href="">Send Message</a></button>
                             </div>
                             
                             
@@ -536,7 +537,7 @@
                             <img src="./img/container/news/img-1.jpg" alt="" class="news__img">
                             <span class="news__author">By Admin</span>
                             <span class="news__date">. Nov 24, 2020</span>
-                            <p class="news__label">Helpful tips for become a successful designer</p>
+                            <a href="#" class="news__label">Helpful tips for become a successful designer</a>
                             <p class="news__more">Read More...</p>
                         </div>
     
@@ -544,7 +545,7 @@
                             <img src="./img/container/news/img-2.jpg" alt="" class="news__img">
                             <span class="news__author">By Admin</span>
                             <span class="news__date">. Nov 24, 2020</span>
-                            <p class="news__label">Helpful tips for become a successful designer</p>
+                            <a href="#" class="news__label">Helpful tips for become a successful designer</a>
                             <p class="news__more">Read More...</p>
                         </div>
     
@@ -552,7 +553,7 @@
                             <img src="./img/container/news/img-3.jpg" alt="" class="news__img">
                             <span class="news__author">By Admin</span>
                             <span class="news__date">. Nov 24, 2020</span>
-                            <p class="news__label">Helpful tips for become a successful designer</p>
+                            <a href="#" class="news__label">Helpful tips for become a successful designer</a>
                             <p class="news__more">Read More...</p>
                         </div>
                     </div>
@@ -612,4 +613,6 @@
 </body>
 </html>
 
-<!-- http://follio-react.wpocean.com/home -->
+<!-- 
+    http://follio-react.wpocean.com/home
+ -->

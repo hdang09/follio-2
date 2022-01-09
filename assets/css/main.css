@@ -235,12 +235,14 @@
 }
 
 .aboutme--btn {
+    --height: 55px;
     width: 225px;
     background-color: transparent;
     color: #fff;
     border: none;
     border-bottom: 2px solid #171674;
-    height: 55px;
+    height: var(--height);
+    line-height: var(--height);
     font-weight: 600;
     font-size: 1.6rem;
     cursor: pointer;
@@ -413,28 +415,6 @@
     font-weight: 1000;
 }
 
-/*  */
-
-/* #btn-1:checked ~ .section-1 {
-    display: block;
-}
-
-#btn-2:checked ~ .section-2 {
-    display: block;
-}
-
-#btn-3:checked ~ .section-3 {
-    display: block;
-}
-
-#btn-4:checked ~ .section-4 {
-    display: block;
-}
-
-#btn-5:checked ~ .section-5 {
-    display: block;
-} */
-
 /* Portfolio */
 .portfolio-item {
     position: relative;
@@ -467,6 +447,11 @@
     border: none;
     cursor: pointer;
     position: relative;
+    transition: background-color linear 0.25s;
+}
+
+.portfolio-item__view-btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio-item__view-btn::after {
@@ -476,6 +461,21 @@
     border-bottom: 2px solid #fff;
     width: 100%;
     bottom: -5px;
+}
+
+.see-more {
+    display: block;
+    text-align: right;
+    font-size: 4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color linear 0.25s;
+    cursor: pointer;
+}
+
+.see-more:hover {
+    color: #9c9c9c;
 }
 
 /* Testimonial */
@@ -614,16 +614,16 @@
     font-size: 1.8rem;
     color: var(--text-color);
     outline: transparent;
+    font-family: 'QuickSand';
 }
 
 input[class="card--input"] {
-    display: flex;
-    align-items: flex-end;
     background-color: transparent;
     color: #fff;
 }
 
-input[placeholder="Message"] {
+textarea[placeholder="Message"] {
+    background-color: transparent;
     position: relative;
     top: 0;
     height: 175px;
@@ -690,13 +690,21 @@ input[placeholder="Message"] {
 }
 
 .news__label {
+    display: block;
     font-size: 2.4rem;
     line-height: 1.6;
     font-weight: 900;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color linear 0.2s;
+}
+
+.news__label:hover {
+    color: var(--primary-color);
 }
 
 .news__more {
-    color: var(--primary-color);
+    color: #fa5d72;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.4;
