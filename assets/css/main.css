@@ -235,7 +235,7 @@
 }
 
 .aboutme--btn {
-    --height: 55px;
+    --height: 70px;
     width: 225px;
     background-color: transparent;
     color: #fff;
@@ -248,26 +248,11 @@
     cursor: pointer;
     display: inline-block;
     text-align: center;
+    transition: border-bottom linear 0.2s;
 }
 
-.about-btn {
-
-}
-
-.skill-btn {
-
-}
-
-.services-btn {
-
-}
-
-.social-media-btn {
-
-}
-
-.award-btn {
-
+.aboutme--btn:hover {
+    border-bottom: 2px solid var(--text-color);
 }
 
 .section-1,
