@@ -241,12 +241,12 @@
 .aboutme--btn {
     --height: 70px;
     width: 225px;
+    height: var(--height);
+    line-height: var(--height);
     background-color: transparent;
     color: #fff;
     border: none;
     border-bottom: 2px solid #171674;
-    height: var(--height);
-    line-height: var(--height);
     font-weight: 600;
     font-size: 1.6rem;
     cursor: pointer;
@@ -255,7 +255,12 @@
     transition: border-bottom linear 0.2s;
 }
 
-.aboutme--btn:hover {
+.aboutme--btn:hover,
+#btn-1:checked ~ label[for=btn-1],
+#btn-2:checked ~ label[for=btn-2],
+#btn-3:checked ~ label[for=btn-3],
+#btn-4:checked ~ label[for=btn-4],
+#btn-5:checked ~ label[for=btn-5] {
     border-bottom: 2px solid var(--text-color);
 }
 
